@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Estilizando o topo da página */
+.topo {
+    background-color: rgb(20, 182, 182);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.logo{
+    height: 75px;
+    opacity: 0.9;
+}
+
+.link-topo{
+    margin: 0px 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilizando a capa da página */
+.capa {
+    width: 100%;
+    background-image: url('images/recepcao.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.capa h1 {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 38px;
+}
+
+/* Estilizando a seção sobre a clínica */
+.texto-sobre {
+    color: gray;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.texto-sobre h3 {
+    line-height: 60px;
+}
+
+/* Estilizando a seção dos itens da clinica */
+.itens-clinica {
+    display: flex;
+    justify-content: center;
+}
+
+.bloco-itens {
+    color: gray;
+    margin: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bloco-itens h4 {
+    line-height: 70px;
+    font-weight: bold;
+}
+
+/* Estilizando a seção dos cards da página */
+.galeria-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+   width: calc((100% - 500px) / 3);
+   box-shadow: 2px 2px 5px 2px gray;
+   margin: 0px 30px;
+}
+
+.card p {
+    text-align: center;
+    color: gray;
+    margin: 10px 0px;
+}
+
+.imagem-card {
+    width: 100%;
+}
+
+.horarios {
+    text-decoration: none;
+    margin: 30px 0;
+    background-color: rgb(20, 182, 182);
+    border: none;
+    padding: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilizando a seção do maps */
+.maps iframe{
+    width: 90%;
+    margin: 10px 15px 40px 15px;
+}
