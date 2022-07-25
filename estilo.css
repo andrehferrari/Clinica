@@ -55,7 +55,7 @@
 }
 
 .texto-sobre h3 {
-    line-height: 60px;
+    margin-bottom: 30px;
 }
 
 /* Estilizando a seção dos itens da clinica */
@@ -73,7 +73,7 @@
 }
 
 .bloco-itens h4 {
-    line-height: 70px;
+    margin-bottom: 30px;
     font-weight: bold;
 }
 
@@ -92,9 +92,9 @@
 }
 
 .card {
-   width: calc((100% - 500px) / 3);
-   box-shadow: 2px 2px 5px 2px gray;
-   margin: 0px 30px;
+    width: calc((100% - 200px) / 3);
+    margin: 10px auto;
+    box-shadow: 2px 2px 5px 2px gray;
 }
 
 .card p {
@@ -117,8 +117,90 @@
     font-weight: bold;
 }
 
+/* Estilizando a seção de contato */
+.contato {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+}
+
 /* Estilizando a seção do maps */
 .maps iframe{
-    width: 90%;
-    margin: 10px 15px 40px 15px;
+    width: 100%;
+    margin: 35px 0;
+}
+
+/* Estilizando o rodapé da página */
+footer {
+    background-color: rgb(20, 182, 182);
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+/* Criando as media querry */
+/* Página com até 425px */
+@media (max-width: 580px) {
+    .link-topo {
+        font-size: 12px;
+    }
+
+    .topo {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .capa {
+        height: 200px;
+    }
+
+    .capa h1 {
+        font-size: 20px;
+    }
+
+    .itens-clinica figure {
+        display: none;
+    }
+
+    .container-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .contato {
+        margin: 20px auto;
+        width: 90%;
+    }
+}
+
+/* Página com até 768px */
+@media (max-width: 768px) {
+    .contato {
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .container-cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: calc((100% - 200px) / 2);
+        margin: 20px auto;
+    }
+}
+
+/* Página com até 1024px */
+@media (max-width: 1024px) {
+    .card {
+        width: calc((100% - 200px) / 3);
+        margin: 20px auto;
+    }
 }
